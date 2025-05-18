@@ -1,0 +1,23 @@
+.main_section_gradient {
+    background: linear-gradient(to bottom, #F7F3F7, #F3EAF5, #EEE5FA, #FBF5FB);
+}
+
+.green_gradient {
+    background: linear-gradient(to left, #02C6B7, #38EF7D);
+}
+
+.green_gradient_correct {
+    background: linear-gradient(to right, #02C6B7, #38EF7D);
+}
+
+.red_gradient {
+    background: linear-gradient(to bottom, #5F5FE4, #AA4EEE, #DF40BD);
+}
+
+.incorrect_gradient {
+    background: linear-gradient(to right, #F80759, #BC4E9C)
+}
+
+.footer_bg {
+    background-color: #FBF5FB;
+}

@@ -55,6 +55,10 @@ export const Quiz = () => {
             const randomVideo = Math.floor(Math.random() * VIDEO_NUMBER) + 1;
             setVideoNumber(randomVideo);
             setUstidanKulish(true);
+
+            setTimeout(() => {
+                setUstidanKulish(false);
+            }, 4000);
         }
     };
 

@@ -1,758 +1,553 @@
 export const questions = [
     {
-        "id": 1,
-        "question": "Python’da o‘zgaruvchiga qiymat biriktirish uchun qaysi belgi ishlatiladi?",
-        "options": [
-            "=",
-            "eq",
-            "==",
-            "==="
-        ],
-        "correctAnswer": "="
+      "id": 1,
+      "question": "∫ sin(x) dx ni hisoblang.",
+      "options": [
+        "-cos(x) + C",
+        "cos(x) + C",
+        "sin(x) + C",
+        "-sin(x) + C"
+      ],
+      "correctAnswer": "-cos(x) + C"
     },
     {
-        "id": 2,
-        "question": "Python’da sharh yozish uchun qaysi belgi ishlatiladi?",
-        "options": [
-            "/* */",
-            "//",
-            "#",
-            "--"
-        ],
-        "correctAnswer": "#"
+      "id": 2,
+      "question": "∫ 3x² dx ni hisoblang.",
+      "options": [
+        "x³ + C",
+        "x² + C",
+        "x³/3 + C",
+        "3x³ + C"
+      ],
+      "correctAnswer": "x³ + C"
     },
     {
-        "id": 3,
-        "question": "Python’da ro‘yxat (list) yaratish uchun qanday sintaksis ishlatiladi?",
-        "options": [
-            "()",
-            "<>",
-            "[]",
-            "{}"
-        ],
-        "correctAnswer": "[]"
+      "id": 3,
+      "question": "Kasrlar necha turga bo‘linadi?",
+      "options": [
+        "3",
+        "2",
+        "1",
+        "Bo'lsa bo'linib ketaversa kerak"
+      ],
+      "correctAnswer": "3"
     },
     {
-        "id": 4,
-        "question": "Quyidagilardan qaysi biri Python’da ma’lumot turi emas?",
-        "options": [
-            "int",
-            "dict",
-            "array",
-            "list"
-        ],
-        "correctAnswer": "array"
+      "id": 4,
+      "question": "Ushbu noto‘g‘ri kasrni aralash kasrga aylantiring: 74/7",
+      "options": [
+        "10 4/7",
+        "7 4/7",
+        "9 6/7",
+        "12 5/7"
+      ],
+      "correctAnswer": "10 4/7"
     },
     {
-        "id": 5,
-        "question": "Python’da matnli ma’lumotlar qanday o’zgaruvchi turida saqlanadi?",
-        "options": [
-            "str",
-            "bool",
-            "float",
-            "int"
-        ],
-        "correctAnswer": "str"
+      "id": 5,
+      "question": "To‘g‘ri kasr ta’rifi qaysi qatorda keltirilgan?",
+      "options": [
+        "Surati maxrajidan kichik bo‘lgan kasrlar",
+        "Surati maxrajidan katta yoki teng bo‘lgan kasrlar",
+        "Ixtiyoriy kasr to‘g‘ri kasr deyiladi",
+        "Surati bilan maxraji qovun-tarvuz bo‘lganlar"
+      ],
+      "correctAnswer": "Surati maxrajidan kichik bo‘lgan kasrlar"
     },
     {
-        "id": 6,
-        "question": "Quyidagi funksiyalardan qaysi biri matn uzunligini qaytaradi?",
-        "options": [
-            "size()",
-            "measure()",
-            "len()",
-            "count()"
-        ],
-        "correctAnswer": "len()"
+      "id": 6,
+      "question": "Noto‘g‘ri kasr ta’rifi qaysi qatorda keltirilgan?",
+      "options": [
+        "Surati maxrajidan katta yoki teng bo‘lgan kasrlar",
+        "Surati maxrajidan kichik bo‘lgan kasrlar",
+        "Ixtiyoriy kasr noto‘g‘ri kasr deyiladi",
+        "Noto‘g‘ri kasrlar faqat darsliklarda uchraydi"
+      ],
+      "correctAnswer": "Surati maxrajidan katta yoki teng bo‘lgan kasrlar"
     },
     {
-        "id": 7,
-        "question": "Python’da “if” shart operatori qanday yoziladi?",
-        "options": [
-            "if (shart)",
-            "if shart:",
-            "when if",
-            "if condition then"
-        ],
-        "correctAnswer": "if shart:"
+      "id": 7,
+      "question": "Ushbu kasrlar ichidan noto‘g‘ri kasrlarni ajrating: 5/17, 23/15, 4/15, 45/56, 100/78, 67/67 (eng uzuni javobi 🤫)",
+      "options": [
+        "23/15, 100/78, 67/67",
+        "5/17, 4/15",
+        "45/56, 4/15",
+        "5/17, 23/15"
+      ],
+      "correctAnswer": "23/15, 100/78, 67/67"
     },
     {
         "id": 8,
-        "question": "Python’da tsiklni to‘xtatish uchun qaysi kalit so‘z ishlatiladi?",
+        "question": "Ushbu kasrlar ichidan to‘g‘ri kasrlarni ajrating: 35/57, 4/15, 45/56, 1/67, 23/15, 100/78, 67/67 (eng uzuni javobi 🤫)",
         "options": [
-            "exit",
-            "to'xtaaa",
-            "stop",
-            "break"
+          "35/57, 4/15, 45/56, 1/67",
+          "23/15, 35/57",
+          "4/15, 100/78",
+          "1/67, 45/56"
         ],
-        "correctAnswer": "break"
-    },
-    {
+        "correctAnswer": "35/57, 4/15, 45/56, 1/67"
+      },
+      {
         "id": 9,
-        "question": "Python’da ro‘yxatning oxiriga element qo‘shish uchun qaysi metod ishlatiladi?",
+        "question": "∫ 1/x dx ni hisoblang",
         "options": [
-            "insertEnd()",
-            "push()",
-            "append()",
-            "add()"
+          "ln|x| + C",
+          "1/x + C",
+          "x + C",
+          "e^x + C"
         ],
-        "correctAnswer": "append()"
-    },
-    {
+        "correctAnswer": "ln|x| + C"
+      },
+      {
         "id": 10,
-        "question": "Quyidagi ma’lumot turlaridan qaysi biri o‘zgarmas (immutable) hisoblanadi?",
+        "question": "∫ e^x dx ni hisoblang",
         "options": [
-            "dict",
-            "set",
-            "tuple",
-            "list"
+          "e^x + C",
+          "x * e^x + C",
+          "ln(x) + C",
+          "e^(x+1) + C"
         ],
-        "correctAnswer": "tuple"
-    },
-    {
+        "correctAnswer": "e^x + C"
+      },
+      {
         "id": 11,
-        "question": "Python’da lug‘at (dictionary) yaratish uchun qanday sintaksis ishlatiladi?",
+        "question": "Olmazor to‘rtburchak shaklda. Bog‘ maydonining bo‘yi 27 m, eni undan 3 marta kichik. Fermer bog‘ni qushlardan himoyalash uchun ustini to‘r bilan o‘rashni xohlaydi. Qancha to‘r kerak?",
         "options": [
-            "[]",
-            "{}",
-            "<>",
-            "()"
+          "162 m² (qisman to‘sish rejalashtirilgan bo‘lsa kerak)",
+          "243 m² (to‘liq usti yopiladi)",
+          "108 m² (yarmi yetarli deyishganmi?)",
+          "81 m²"
         ],
-        "correctAnswer": "{}"
-    },
-    {
+        "correctAnswer": "243 m² (to‘liq usti yopiladi)"
+      },      
+      {
         "id": 12,
-        "question": "Python’da ro‘yxatdan elementni o‘chirish uchun qaysi metod ishlatiladi?",
+        "question": "∫ (2x + 1) dx ni hisoblang",
         "options": [
-            "delete()",
-            "remove()",
-            "discard()",
-            "cut()"
+          "x² + x + C",
+          "2x + x² + C",
+          "x² + 1 + C",
+          "2x² + x + C"
         ],
-        "correctAnswer": "remove()"
-    },
-    {
+        "correctAnswer": "x² + x + C"
+      },
+      {
         "id": 13,
-        "question": "Quyidagi operatorlardan qaysi biri “va” mantiqiy amalini bajaradi?",
+        "question": "∫ cos(x) dx ni hisoblang",
         "options": [
-            "and",
-            "&&",
-            "plus",
-            "or"
+          "sin(x) + C",
+          "-sin(x) + C",
+          "cos(x) + C",
+          "-cos(x) + C"
         ],
-        "correctAnswer": "and"
-    },
-    {
+        "correctAnswer": "sin(x) + C"
+      },
+      {
         "id": 14,
-        "question": "Python’da funksiya e’lon qilish uchun qaysi kalit so‘z ishlatiladi?",
+        "question": "∫ 1/√x dx ni hisoblang",
         "options": [
-            "func",
-            "def",
-            "fn",
-            "function"
+          "2√x + C",
+          "√x + C",
+          "ln(x) + C",
+          "1/√x + C"
         ],
-        "correctAnswer": "def"
-    },
-    {
+        "correctAnswer": "2√x + C"
+      },
+      {
         "id": 15,
-        "question": "Python’da “for” tsikli qanday yoziladi?",
+        "question": "∫ 1/x² dx ni hisoblang",
         "options": [
-            "repeat x",
-            "for x in range():",
-            "foreach x in list",
-            "loop x"
+          "-1/x + C",
+          "ln|x| + C",
+          "1/x + C",
+          "-x² + C"
         ],
-        "correctAnswer": "for x in range():"
-    },
-    {
+        "correctAnswer": "-1/x + C"
+      },
+      {
         "id": 16,
-        "question": "Quyidagi metodlardan qaysi biri ro‘yxatni tartiblaydi?",
+        "question": "Uchta taroqdan iborat to‘plamning narxi 18 600 so‘m, beshtalik to‘plam esa bundan 7 200 so‘m qimmatroq. Qaysi birida bitta taroq arzonroq bo‘ladi?",
         "options": [
-            "order()",
-            "shuffle()",
-            "arrange()",
-            "sort()"
+          "Uchta taroq to'plam",
+          "Beshta taroq to'plam",
+          "Ikkalasining narxi bir xil",
+          "Shuni eplomasayiz topishni bilmadim endi"
         ],
-        "correctAnswer": "sort()"
-    },
-    {
+        "correctAnswer": "Beshta taroq to'plam"
+      },
+      {
         "id": 17,
-        "question": "Python’da “while” tsikli qanday ishlaydi?",
+        "question": "Firma yanvar oyida 135 mln so‘m, fevralda yanvardagidan 5 baravar kam, mart oyida esa fevraldagidan 3 baravar ko‘p daromad oldi. Firma bu kvartalda jami necha so‘m daromad olgan?",
         "options": [
-            "bir marta ishlaydi",
-            "shart qanoatlantirganda ishlayveradi",
-            "to'xtamay ishladi",
-            "zerikkanda ishlab ishlab turadi"
+          "Faqat zararga kirgan firma",
+          "243 mln so‘m",
+          "270 mln so‘m",
+          "216 mln so‘m"
         ],
-        "correctAnswer": "shart qanoatlantirganda ishlayveradi"
-    },
-    {
+        "correctAnswer": "243 mln so‘m"
+      },
+      {
         "id": 18,
-        "question": "Python-da faylni ochish uchun qaysi funksiya ishlatiladi?",
+        "question": "∫₀¹ x² dx ni hisoblang",
         "options": [
-            "open()",
-            "file()",
-            "start()",
-            "access()"
+          "1/3",
+          "2/3",
+          "1/2",
+          "1"
         ],
-        "correctAnswer": "open()"
-    },
-    {
+        "correctAnswer": "1/3"
+      },
+      {
         "id": 19,
-        "question": "Quyidagi ma’lumot turlaridan qaysi biri takrorlanmaydigan elementlardan iborat?",
+        "question": "∫₀^π sin(x) dx ni hisoblang",
         "options": [
-            "set",
-            "tuple",
-            "list",
-            "dict"
+          "2",
+          "0",
+          "1",
+          "4"
         ],
-        "correctAnswer": "set"
-    },
-    {
+        "correctAnswer": "2"
+      },
+      {
         "id": 20,
-        "question": "Python’da matnni katta harflarga aylantirish uchun qaysi metod ishlatiladi?",
+        "question": "Suv ta’minoti orqali suv yuborishdan oldin quvurlar maxsus basseynda tozalandi. Suv tozalagidan bitta basseynning yuzi 98 m². Agar bu basseynning uzunligi 14 m bo‘lsa, uning perimetri qanday bo‘ladi?",
         "options": [
-            "toUpper()",
-            "upper()",
-            "capitalize()",
-            "big()"
+          "42 m",
+          "38 m",
+          "28 m",
+          "56 m"
         ],
-        "correctAnswer": "upper()"
-    },
-    {
+        "correctAnswer": "42 m"
+      },
+      {
         "id": 21,
-        "question": "Python’da “else” operatori qachon ishlatiladi?",
+        "question": "∫₁² 1/x² dx ni hisoblang",
         "options": [
-            "bir marta ishlasa",
-            "agar if noto‘g‘ri bo‘lsa",
-            "yozilgan bo‘lsa",
-            "if oldin ishlasa"
+          "1/2",
+          "1",
+          "1/3",
+          "3"
         ],
-        "correctAnswer": "agar if noto‘g‘ri bo‘lsa"
-    },
-    {
+        "correctAnswer": "1/2"
+      },
+      {
         "id": 22,
-        "question": "Python’da ro‘yxatning birinchi elementini olish uchun qanday indeks ishlatiladi?",
+        "question": "∫₀¹ eˣ dx ni hisoblang",
         "options": [
-            "1",
-            "-1",
-            "birinchi",
-            "0"
+          "e - 1",
+          "e + 1",
+          "1",
+          "ln(e)"
+        ],
+        "correctAnswer": "e - 1"
+      },
+      {
+        "id": 23,
+        "question": "∫₀^π/2 cos(x) dx ni hisoblang",
+        "options": [
+          "1",
+          "1/2",
+          "π/2",
+          "√3/2"
+        ],
+        "correctAnswer": "1"
+      },
+      {
+        "id": 24,
+        "question": "∫₀¹ (3x² + 2x + 1) dx ni hisoblang",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "correctAnswer": "3"
+      },
+      {
+        "id": 25,
+        "question": "∫₀¹ (1 - x²) dx ni hisoblang",
+        "options": [
+          "2/3",
+          "1",
+          "1/2",
+          "0"
+        ],
+        "correctAnswer": "2/3"
+      },
+      {
+        "id": 26,
+        "question": "∫₀¹ √x dx ni hisoblang",
+        "options": [
+          "2/3",
+          "1/2",
+          "1",
+          "√2"
+        ],
+        "correctAnswer": "2/3"
+      },
+      {
+        "id": 27,
+        "question": "Barcha raqamlar ko‘paytmasini toping (raqamlar orasida 0 bor. hoxlagancha ko'paytirmaysiz javob bir xil chiqadi)",
+        "options": [
+          "0 (zero rules!)",
+          "362880",
+          "1",
+          "9"
+        ],
+        "correctAnswer": "0 (zero rules!)"
+      },
+      {
+        "id": 28,
+        "question": "∫₀¹ 1/√x dx ni hisoblang",
+        "options": [
+          "2",
+          "1",
+          "∞ (cheksiz!)",
+          "0"
+        ],
+        "correctAnswer": "2"
+      },
+      {
+        "id": 29,
+        "question": "Hazrati Sultan tog‘ining balandligi 4 643 m, Katta Chimyon tog‘idan 1 334 m baland. Katta Chimyon tog‘i esa Beshtor tog‘idan 990 m past bo‘lsa, Beshtor tog‘ining balandligi nechaga teng?",
+        "options": [
+          "4299 m",
+          "3945 m",
+          "4643 m",
+          "3309 m"
+        ],
+        "correctAnswer": "4299 m"
+      },
+      {
+        "id": 30,
+        "question": "∫₁² ln(x) dx ni hisoblang",
+        "options": [
+          "2ln(2) - 1",
+          "ln(2)",
+          "1",
+          "ln(4)"
+        ],
+        "correctAnswer": "2ln(2) - 1"
+      },
+      {
+        "id": 31,
+        "question": "f(x) = x² + x funksiyaning hosilasini toping",
+        "options": [
+          "2x + 1",
+          "x² + 1",
+          "2x",
+          "x + 1"
+        ],
+        "correctAnswer": "2x + 1"
+      },
+      {
+        "id": 32,
+        "question": "f(x) = x³/3 + x²/2 funksiyaning hosilasini toping",
+        "options": [
+          "x² + x",
+          "x²/3 + x/2",
+          "3x² + 2x",
+          "1"
+        ],
+        "correctAnswer": "x² + x"
+      },
+      {
+        "id": 33,
+        "question": "f(x) = 5x + 1 funksiyaning hosilasini toping",
+        "options": [
+          "5",
+          "1",
+          "x",
+          "5x"
+        ],
+        "correctAnswer": "5"
+      },
+      {
+        "id": 34,
+        "question": "Bir fermeda 250 ta mol va 380 ta qo‘y bor. U 150 ta molni sotib yubordi va 70 ta qo‘yni boshqa fermaga sotdi. Hozir fermada nechta mol va nechta qo‘y bor?",
+        "options": [
+          "100 ta mol, 310 ta qo‘y",
+          "150 ta mol, 450 ta qo‘y",
+          "250 ta mol, 380 ta qo‘y",
+          "Mol emas, hozir faqat buzoqlar bor :)"
+        ],
+        "correctAnswer": "100 ta mol, 310 ta qo‘y"
+      },
+      {
+        "id": 35,
+        "question": "f(x) = 10 funksiyaning hosilasini toping (Bilmaganga uyat)",
+        "options": [
+          "0",
+          "10",
+          "1",
+          "∞"
         ],
         "correctAnswer": "0"
-    },
-    {
-        "id": 23,
-        "question": "Quyidagi funksiyalardan qaysi biri tasodifiy son generatsiya qiladi?",
-        "options": [
-            "random()",
-            "shuffle()",
-            "choice()",
-            "random.randint()"
-        ],
-        "correctAnswer": "random.randint()"
-    },
-    {
-        "id": 24,
-        "question": "Python’da “try-except” qanday maqsadda ishlatiladi?",
-        "options": [
-            "ogohlantirish uchun",
-            "log yozish",
-            "internetda xatolik qidirish uchun",
-            "xatolikni ushlash uchun"
-        ],
-        "correctAnswer": "xatolikni ushlash uchun"
-    },
-    {
-        "id": 25,
-        "question": "Python’da “range(5)” funksiyasi qanday ketma-ketlikni hosil qiladi?",
-        "options": [
-            "1, 3, 5, 7, 9",
-            "1, 2, 3, 4, 5",
-            "0, 1, 2, 3, 4",
-            "0, 2, 4, 6, 8"
-        ],
-        "correctAnswer": "0, 1, 2, 3, 4"
-    },
-    {
-        "id": 26,
-        "question": "Quyidagi metodlardan qaysi biri lug‘atning kalitlarini qaytaradi?",
-        "options": [
-            "items()",
-            "entries()",
-            "keys()",
-            "values()"
-        ],
-        "correctAnswer": "keys()"
-    },
-    {
-        "id": 27,
-        "question": "Python’da “input()” funksiyasi nima qiladi?",
-        "options": [
-            "raqam kiritadi",
-            "foydalanuvchi kiritgan qiymatni oladi",
-            "kiritishni boshlaydi",
-            "chiqadi"
-        ],
-        "correctAnswer": "foydalanuvchi kiritgan qiymatni oladi"
-    },
-    {
-        "id": 28,
-        "question": "Quyidagi operatorlardan qaysi biri “yoki” mantiqiy amalini bajaradi?",
-        "options": [
-            "plus",
-            "yoki",
-            "||",
-            "or"
-        ],
-        "correctAnswer": "or"
-    },
-    {
-        "id": 29,
-        "question": "Python’da “None” qiymati nima anglatadi?",
-        "options": [
-            "hech narsa yo‘q degani",
-            "nol",
-            "0",
-            "False"
-        ],
-        "correctAnswer": "hech narsa yo‘q degani"
-    },
-    {
-        "id": 30,
-        "question": "Python’da ro‘yxatning uzunligini aniqlash uchun qaysi funksiya ishlatiladi?",
-        "options": [
-            "measure()",
-            "tall()",
-            "len()",
-            "count()"
-        ],
-        "correctAnswer": "len()"
-    },
-    {
-        "id": 31,
-        "question": "Quyidagi metodlardan qaysi biri ro‘yxatni teskari tartibda joylashtiradi?",
-        "options": [
-            "flip()",
-            "reverse()",
-            "invert()",
-            "turn()"
-        ],
-        "correctAnswer": "reverse()"
-    },
-    {
-        "id": 32,
-        "question": "Python’da “elif” operatori qanday ishlatiladi?",
-        "options": [
-            "ko'p shartlarni tekshirish uchun",
-            "agar if ishlamasa",
-            "ifdan oldin",
-            "ifdan keyin"
-        ],
-        "correctAnswer": "ko'p shartlarni tekshirish uchun"
-    },
-    {
-        "id": 33,
-        "question": "Quyidagi ma’lumot turlaridan qaysi biri kalit-qiymat juftligini saqlaydi?",
-        "options": [
-            "tuple",
-            "list",
-            "dictionary(lug'at)",
-            "set"
-        ],
-        "correctAnswer": "dictionary(lug'at)"
-    },
-    {
-        "id": 34,
-        "question": "Python’da “print()” funksiyasi qanday ishlaydi?",
-        "options": [
-            "yozadi",
-            "ochadi",
-            "saqlaydi",
-            "chiqaradi"
-        ],
-        "correctAnswer": "chiqaradi"
-    },
-    {
-        "id": 35,
-        "question": "Python’da “import” kalit so‘zi nima uchun ishlatiladi?",
-        "options": [
-            "kitob o‘qish uchun 😅",
-            "funksiya yozish uchun",
-            "tanaffus uchun",
-            "modullarni chaqirish uchun"
-        ],
-        "correctAnswer": "modullarni chaqirish uchun"
-    },
-    {
+      },
+      {
         "id": 36,
-        "question": "Quyidagi metodlardan qaysi biri ro‘yxatdan oxirgi elementni o‘chiradi?",
+        "question": "Hisoblang: 13/21 : 26/14",
         "options": [
-            "delete()",
-            "cut()",
-            "pop()",
-            "remove()"
+          "1/2",
+          "2/3",
+          "1/3",
+          "13/35"
         ],
-        "correctAnswer": "pop()"
-    },
-    {
+        "correctAnswer": "1/3"
+      },
+      {
         "id": 37,
-        "question": "Python’da “lambda” funksiyasi qanday ishlatiladi?",
+        "question": "f(x) = sin(x) funksiyaning hosilasini toping",
         "options": [
-            "qisqa funksiya yaratadi",
-            "funksiya o‘chirish",
-            "tez yozish",
-            "for bilan ishlaydi"
+          "cos(x)",
+          "-sin(x)",
+          "sin(x)",
+          "cos(x) + x"
         ],
-        "correctAnswer": "qisqa funksiya yaratadi"
-    },
-    {
+        "correctAnswer": "cos(x)"
+      },
+      {
         "id": 38,
-        "question": "Quyidagi operatorlardan qaysi biri teng emasligini tekshiradi?",
+        "question": "f(x) = cos(x) funksiyaning hosilasini toping",
         "options": [
-            "<>",
-            "~=",
-            "!=",
-            "notEqual()"
+          "-sin(x)",
+          "cos(x)",
+          "sin(x)",
+          "tan(x)"
         ],
-        "correctAnswer": "!="
-    },
-    {
+        "correctAnswer": "-sin(x)"
+      },
+      {
         "id": 39,
-        "question": "Python’da “list()” funksiyasi nima qiladi?",
+        "question": "f(x) = ln(x + 1) funksiyaning hosilasini toping",
         "options": [
-            "to‘plam qiladi",
-            "tuplega aylantiradi",
-            "listni yaratadi",
-            "dict qiladi"
+          "1 / (x + 1)",
+          "ln(x)",
+          "x",
+          "1 / x"
         ],
-        "correctAnswer": "listni yaratadi"
-    },
-    {
+        "correctAnswer": "1 / (x + 1)"
+      },
+      {
         "id": 40,
-        "question": "Quyidagi metodlardan qaysi biri lug‘atdan elementni o‘chiradi?",
+        "question": "f(x) = 3x^5 + log₃(x) funksiyaning hosilasini toping",
         "options": [
-            "pop()",
-            "del",
-            "remove()",
-            "delete()"
+          "15x^4 + 1 / (x ln(3))",
+          "5x^4 + log₃(x)",
+          "15x^4 + log₃(x)",
+          "3x^5 + 1 / x"
         ],
-        "correctAnswer": "pop()"
-    },
-    {
-        id: 41,
-        question: "Python’da “in” operatori nima uchun ishlatiladi?",
-        options: [
-            "Takrorlash uchun",
-            "Element ro'yxatda borligini tekshirish uchun",
-            "To‘xtatish uchun",
-            "Import qilish uchun"
+        "correctAnswer": "15x^4 + 1 / (x ln(3))"
+      },
+      {
+        "id": 41,
+        "question": "f(x) = √x + 7 funksiyaning hosilasini toping",
+        "options": [
+          "1 / (2√x)",
+          "√x",
+          "1 / x",
+          "0"
         ],
-        correctAnswer: "Element ro'yxatda borligini tekshirish uchun"
-    },
-    {
-        id: 42,
-        question: "Quyidagi funksiyalardan qaysi biri matnni kichik harflarga aylantiradi?",
-        options: ["small()", "lower()", "minimize()", "toLow()"],
-        correctAnswer: "lower()"
-    },
-    {
-        id: 43,
-        question: "Python’da “return” kalit so‘zi nima uchun ishlatiladi?",
-        options: [
-            "Funktsiyani to‘xtatish",
-            "Qiymatni qaytarish",
-            "Xatolik chiqarish",
-            "Qaytib uyga ketish uchun 😄"
+        "correctAnswer": "1 / (2√x)"
+      },
+      {
+        "id": 42,
+        "question": "f(x) = 3sin(x) funksiyaning hosilasini toping",
+        "options": [
+          "3cos(x)",
+          "sin(x)",
+          "cos(x)",
+          "-3sin(x)"
         ],
-        correctAnswer: "Qiymatni qaytarish"
-    },
-    {
-        id: 44,
-        question: "Quyidagi metodlardan qaysi biri ro‘yxatga bir nechta element qo‘shadi?",
-        options: ["append()", "add()", "extend()", "pushAll()"],
-        correctAnswer: "extend()"
-    },
-    {
-        id: 45,
-        question: "Python’da “global” kalit so‘zi qanday ishlatiladi?",
-        options: [
-            "O‘zgaruvchini global qilish uchun",
-            "Import qilish uchun",
-            "Fayl ochish uchun",
-            "Sayohat qilish uchun 🌍"
+        "correctAnswer": "3cos(x)"
+      },
+      {
+        "id": 43,
+        "question": "f(x) = x^2 + 2x + 1 funksiyaning hosilasini toping",
+        "options": [
+          "2x + 2",
+          "x^2 + 1",
+          "2x",
+          "x + 2"
         ],
-        correctAnswer: "O‘zgaruvchini global qilish uchun"
-    },
-    {
-        id: 46,
-        question: "Quyidagi funksiyalardan qaysi biri ro‘yxatni bo‘shatadi?",
-        options: ["clear()", "empty()", "del()", "flush()"],
-        correctAnswer: "clear()"
-    },
-    {
-        id: 47,
-        question: "Python’da “is” operatori nima uchun ishlatiladi?",
-        options: [
-            "Tenglikni tekshirish uchun (identiklik)",
-            "Qo‘shish uchun",
-            "Tashqi faylni ochish uchun",
-            "Bu shunchaki is 😎"
+        "correctAnswer": "2x + 2"
+      },
+      {
+        "id": 44,
+        "question": "f(x) = (1/2)x^2 + 2x funksiyaning hosilasini toping",
+        "options": [
+          "x + 2",
+          "x^2 + 2",
+          "2x + 1",
+          "1/2x + 2"
         ],
-        correctAnswer: "Tenglikni tekshirish uchun (identiklik)"
-    },
-    {
-        id: 48,
-        question: "Quyidagi ma’lumot turlaridan qaysi biri indekslangan ketma-ketlikdir?",
-        options: ["set", "tuple", "dictionary", "list"],
-        correctAnswer: "list"
-    },
-    {
-        id: 49,
-        question: "Python’da “join()” metodi nima qiladi?",
-        options: [
-            "Matnlarni birlashtiradi",
-            "Ro‘yxatga element qo‘shadi",
-            "Tsiklni tugatadi",
-            "Bayramga qo‘shiladi 🎉"
+        "correctAnswer": "x + 2"
+      },
+      {
+        "id": 45,
+        "question": "f(x) = 2 / x funksiyaning hosilasini toping",
+        "options": [
+          "-2 / x^2",
+          "2x",
+          "ln(x)",
+          "-1 / x"
         ],
-        correctAnswer: "Matnlarni birlashtiradi"
-    },
-    {
-        id: 50,
-        question: "Quyidagi funksiyalardan qaysi biri faylga yozadi?",
-        options: ["write()", "save()", "log()", "print()"],
-        correctAnswer: "write()"
-    },
-    {
-        id: 51,
-        question: "Python’da “split()” metodi nima qiladi?",
-        options: [
-            "Matnni qismlarga ajratadi",
-            "Ro‘yxatni tozalaydi",
-            "Element o‘chiradi",
-            "Kodga tanaffus beradi 😴"
+        "correctAnswer": "-2 / x^2"
+      },
+      {
+        "id": 46,
+        "question": "Raqamlar nechta?",
+        "options": [
+          "10 ta — 0 dan 9 gacha!",
+          "9 ta — 1 dan 9 gacha!",
+          "8 ta — 2 dan 9 gacha!",
+          "Bilmadim, lekin 13 omadsiz raqam deyishadi..."
         ],
-        correctAnswer: "Matnni qismlarga ajratadi"
-    },
-    {
-        id: 52,
-        question: "Quyidagi operatorlardan qaysi biri qoldiqni hisoblaydi?",
-        options: ["%", "/", "//", "**"],
-        correctAnswer: "%"
-    },
-    {
-        id: 53,
-        question: "Quyidagi metodlardan qaysi biri lug‘atning qiymatlarini qaytaradi?",
-        options: ["keys()", "items()", "values()", "getValues()"],
-        correctAnswer: "values()"
-    },
-    {
-        id: 54,
-        question: "Python’da “pass” kalit so‘zi nima uchun ishlatiladi?",
-        options: [
-            "Kod blokini vaqtincha bo‘sh qoldirish",
-            "O‘zgaruvchi e’lon qilish",
-            "Qiymat qaytarish",
-            "Otish uchun (real hayotda emas 🤷)"
+        "correctAnswer": "10 ta — 0 dan 9 gacha!"
+      },
+      {
+        "id": 47,
+        "question": "f(x) = x^2 sin(x) funksiyaning hosilasini toping",
+        "options": [
+          "2x sin(x) + x^2 cos(x)",
+          "2x sin(x)",
+          "x^2 cos(x)",
+          "cos(x)"
         ],
-        correctAnswer: "Kod blokini vaqtincha bo‘sh qoldirish"
-    },
-    {
-        id: 55,
-        question: "Quyidagi funksiyalardan qaysi biri ro‘yxatning eng katta elementini qaytaradi?",
-        options: ["max()", "top()", "greatest()", "biggest()"],
-        correctAnswer: "max()"
-    },
-    {
-        id: 56,
-        question: "Python’da “filter()” funksiyasi qanday ishlaydi?",
-        options: [
-            "Shartga mos elementlarni ajratadi",
-            "Ro‘yxatni tozalaydi",
-            "Element qo‘shadi",
-            "Instagram filtr qo‘yadi 😎"
+        "correctAnswer": "2x sin(x) + x^2 cos(x)"
+      },
+      {
+        "id": 48,
+        "question": "f(x) = ln(x^2 + 1) funksiyaning hosilasini toping",
+        "options": [
+          "2x / (x^2 + 1)",
+          "ln(x^2) + 1",
+          "1 / (x^2 + 1)",
+          "x / (x + 1)"
         ],
-        correctAnswer: "Shartga mos elementlarni ajratadi"
-    },
-    {
-        id: 57,
-        question: "Python’da “sorted()” funksiyasi nima qiladi?",
-        options: ["Tartiblaydi", "Teskari qiladi", "Qo‘shadi", "Ajratadi"],
-        correctAnswer: "Tartiblaydi"
-    },
-    {
-        id: 58,
-        question: "Quyidagi metodlardan qaysi biri set’ga element qo‘shadi?",
-        options: ["add()", "append()", "extend()", "push()"],
-        correctAnswer: "add()"
-    },
-    {
-        id: 59,
-        question: "Python’da “with” kalit so‘zi qanday ishlatiladi?",
-        options: [
-            "Resurslar bilan xavfsiz ishlash (fayllarni ochib yopganda)",
-            "Import qilish",
-            "Tsikl ochish",
-            "Do‘stlar bilan bo‘lishish uchun"
+        "correctAnswer": "2x / (x^2 + 1)"
+      },
+      {
+        "id": 49,
+        "question": "f(x) = e^(2x) + 2x funksiyaning hosilasini toping",
+        "options": [
+          "2e^(2x) + 2",
+          "e^(2x) + 2",
+          "2x + 2",
+          "e^(2x)"
         ],
-        correctAnswer:  "Resurslar bilan xavfsiz ishlash (fayllarni ochib yopganda)",
-    },
-    {
-        id: 60,
-        question: "Quyidagi funksiyalardan qaysi biri ro‘yxatning eng kichik elementini qaytaradi?",
-        options: ["min()", "low()", "smallest()", "least()"],
-        correctAnswer: "min()"
-    },
-    {
-        id: 61,
-        question: "Python’da “enumerate()” funksiyasi nima qiladi?",
-        options: [
-            "Indeks bilan birga elementlarni beradi",
-            "Sanoqni to‘xtatadi",
-            "Faylni o‘qiydi",
-            "Hayotdagi muammolarni sanaydi 😅"
+        "correctAnswer": "2e^(2x) + 2"
+      },
+      {
+        "id": 50,
+        "question": "f(x) = x^3 * e^x funksiyaning hosilasini toping",
+        "options": [
+          "x^3 * e^x + 3x^2 * e^x",
+          "3x^2 * e^x",
+          "x^2 * e^x",
+          "e^x"
         ],
-        correctAnswer: "Indeks bilan birga elementlarni beradi"
-    },
-    {
-        id: 62,
-        question: "Quyidagi operatorlardan qaysi biri butun bo‘lishni hisoblaydi?",
-        options: ["/", "//", "%", "**"],
-        correctAnswer: "//"
-    },
-    {
-        id: 63,
-        question: "Quyidagi metodlardan qaysi biri set’dan elementni o‘chiradi?",
-        options: ["remove()", "discard()", "pop()", "delete()"],
-        correctAnswer: "remove()"
-    },
-    {
-        id: 64,
-        question: "Quyidagi funksiyalardan qaysi biri ro‘yxatning yig‘indisini hisoblaydi?",
-        options: ["sum()", "addAll()", "total()", "collect()"],
-        correctAnswer: "sum()"
-    },
-    {
-        id: 65,
-        question: "Python’da “slice” nima uchun ishlatiladi?",
-        options: [
-            "Ketma-ketlikdan qismini olish uchun",
-            "Bo‘lish uchun",
-            "Qo‘shish uchun",
-            "Nonni kesish uchun 🍞"
-        ],
-        correctAnswer: "Ketma-ketlikdan qismini olish uchun"
-    },
-    {
-        id: 66,
-        question: "Quyidagi metodlardan qaysi biri matnning boshida yoki oxirida bo‘shliqlarni olib tashlaydi?",
-        options: ["strip()", "trim()", "cut()", "clean()"],
-        correctAnswer: "strip()"
-    },
-    {
-        id: 67,
-        question: "Python’da “raise” kalit so‘zi nima uchun ishlatiladi?",
-        options: ["Xatolik chiqarish uchun", "Qiymat qaytarish", "Sikl boshlash", "Motivatsiya berish uchun 😅"],
-        correctAnswer: "Xatolik chiqarish uchun"
-    },
-    {
-        id: 68,
-        question: "Quyidagi funksiyalardan qaysi biri matnni almashtiradi?",
-        options: ["replace()", "change()", "switch()", "modify()"],
-        correctAnswer: "replace()"
-    },
-    {
-        id: 69,
-        question: "Python’da “isinstance()” funksiyasi nima qiladi?",
-        options: ["Obyekt turini tekshiradi", "String yasaydi", "Qiymatni solishtiradi", "Instada tekshiradi 😉"],
-        correctAnswer: "Obyekt turini tekshiradi"
-    },
-    {
-        id: 70,
-        question: "Quyidagi metodlardan qaysi biri set’larning kesishmasini qaytaradi?",
-        options: ["intersection()", "union()", "combine()", "cross()"],
-        correctAnswer: "intersection()"
-    },
-    {
-        id: 71,
-        question: "Python’da “eval()” funksiyasi nima qiladi?",
-        options: [
-            "Iborani bajaradi",
-            "Qiymat beradi",
-            "Baholaydi",
-            "Shartni tekshiradi"
-        ],
-        correctAnswer: "Iborani bajaradi"
-    },
-    {
-        id: 72,
-        question: "Quyidagi metodlardan qaysi biri matnning har bir so‘zini bosh harf bilan yozadi?",
-        options: ["title()", "capitalize()", "upper()", "firstUpper()"],
-        correctAnswer: "title()"
-    },
-    {
-        id: 73,
-        question: "Python’da “dir()” funksiyasi nima qiladi?",
-        options: [
-            "Obyekt metod va atributlarini ko‘rsatadi",
-            "Papkaga o‘tadi",
-            "Ro‘yxat tartiblaydi",
-            "Yo‘nalishni belgilaydi 🧭"
-        ],
-        correctAnswer: "Obyekt metod va atributlarini ko‘rsatadi"
-    },
-    {
-        id: 74,
-        question: "Quyidagi operatorlardan qaysi biri darajaga ko‘taradi?",
-        options: ["**", "^", "//", "^^"],
-        correctAnswer: "**"
-    },
-    {
-        id: 75,
-        question: "Quyidagi funksiyalardan qaysi biri ro‘yxatning nusxasini yaratadi?",
-        options: ["copy()", "clone()", "duplicate()", "replicate()"],
-        correctAnswer: "copy()"
-    },
-    {
-        id: 76,
-        question: "Python’da “all()” funksiyasi nima qiladi?",
-        options: [
-            "Barcha elementlar True bo‘lsa, True qaytaradi",
-            "Hammasini o‘chiradi",
-            "Barcha xatoliklarni chiqaradi",
-            "Yordam chaqiradi 😅"
-        ],
-        correctAnswer: "Barcha elementlar True bo‘lsa, True qaytaradi"
-    },
-    {
-        id: 77,
-        question: "Quyidagi metodlardan qaysi biri set’larning birlashmasini qaytaradi?",
-        options: ["union()", "combine()", "merge()", "attach()"],
-        correctAnswer: "union()"
-    },
-    {
-        id: 78,
-        question: "Quyidagi funksiyalardan qaysi biri butun songa aylantiradi?",
-        options: ["int()", "integer()", "round()", "fix()"],
-        correctAnswer: "int()"
-    },
-    {
-        id: 79,
-        question: "Python’da “continue” kalit so‘zi nima uchun ishlatiladi?",
-        options: ["Tsiklni keyingi iteratsiyasiga o‘tadi", "Xatolik chiqaradi", "To‘xtatadi", "Ishni davom ettiradi, ammo kofe ichmasdan ☕"],
-        correctAnswer: "Tsiklni keyingi iteratsiyasiga o‘tadi"
-    },
-    {
-        id: 80,
-        question: "Quyidagi funksiyalardan qaysi biri haqiqiy songa aylantiradi?",
-        options: ["float()", "real()", "double()", "fraction()"],
-        correctAnswer: "float()"
-    },
-    {
-        id: 81,
-        question: "Python’da “get()” metodi nima uchun ishlatiladi?",
-        options: ["Lug‘atdan qiymat olish", "Ro‘yxat yaratish", "Qiymat kiritish", "Besh so‘m so‘rash uchun 😄"],
-        correctAnswer: "Lug‘atdan qiymat olish"
-    }
-]
+        "correctAnswer": "x^3 * e^x + 3x^2 * e^x"
+      }
+  ]
+  

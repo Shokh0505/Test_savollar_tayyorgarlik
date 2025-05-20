@@ -13,6 +13,8 @@ export const Quiz = () => {
     const [showNextButton, setShowNextButton] = useState(false);
     const [questionNumberIndex, setQuestionNumberIndex] = useState(0);
     const [selectedOption, setSelectedOption] = useState("");
+    const [hasSelectedOption, setHasSelectedOption] = useState(false);
+    const [foundWrong, setFoundWrong] = useState(false);
     const [ustidanKulish, setUstidanKulish] = useState(false);
     const [videoNumber, setVideoNumber] = useState(1);
 
@@ -45,6 +47,7 @@ export const Quiz = () => {
         if (ustidanKulish) return;
 
         const value = e.currentTarget.dataset.option;
+        setHasSelectedOption(true);
         setSelectedOption(value);
         if (value === correctAnswer) {
             for (let i = 0; i < 3; i++) {
@@ -55,7 +58,7 @@ export const Quiz = () => {
             const randomVideo = Math.floor(Math.random() * VIDEO_NUMBER) + 1;
             setVideoNumber(randomVideo);
             setUstidanKulish(true);
-
+            setFoundWrong(true);
             setTimeout(() => {
                 setUstidanKulish(false);
             }, 4000);
@@ -67,17 +70,23 @@ export const Quiz = () => {
 
         const nextQuestionIndex = questionNumberIndex + 1;
 
-        setQuestionNumberIndex((prev) => prev + 1);
+        let options = [];
+        if (!foundWrong) {
+            options = shuffle(questions[nextQuestionIndex].options);
+            setQuestionNumberIndex((prev) => prev + 1);
+        } else {
+            options = shuffle(questions[questionNumberIndex].options);
+        }
 
         if (nextQuestionIndex >= numberQuestions) {
             navigate("/finished");
             return;
         }
 
-        const options = shuffle(questions[nextQuestionIndex].options);
-
+        setFoundWrong(false);
         setShuffledOptions(options);
         setShowNextButton(false);
+        setHasSelectedOption(false);
     };
 
     useEffect(() => {
@@ -131,7 +140,7 @@ export const Quiz = () => {
                             className={`
                                 mt-4 rounded-lg w-full text-xl p-4 cursor-pointer bg-white
                             ${
-                                selectedOption === option
+                                selectedOption === option && hasSelectedOption
                                     ? selectedOption === correctAnswer
                                         ? "green_gradient_correct"
                                         : "incorrect_gradient"

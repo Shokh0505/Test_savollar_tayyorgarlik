@@ -16,8 +16,8 @@ export const Quiz = () => {
     const [hasSelectedOption, setHasSelectedOption] = useState(false);
     const [foundWrong, setFoundWrong] = useState(false);
     const [ustidanKulish, setUstidanKulish] = useState(false);
-    const [videoNumber, setVideoNumber] = useState(1);
     const [videoSourceURL, setVideoSourceURL] = useState(null);
+    const [nextVideoURL, setNextVideoURL] = useState(null);
 
     const navigate = useNavigate();
 
@@ -44,30 +44,21 @@ export const Quiz = () => {
         });
     };
 
-    const handleClick = (e) => {
+    const handleClick = async (e) => {
         if (ustidanKulish) return;
-
         const value = e.currentTarget.dataset.option;
         setHasSelectedOption(true);
         setSelectedOption(value);
 
         if (value === correctAnswer) {
-            for (let i = 0; i < 3; i++) {
-                fireConfetti();
-            }
+            for (let i = 0; i < 3; i++) fireConfetti();
             setShowNextButton(true);
         } else {
-            const randomVideo = Math.floor(Math.random() * VIDEO_NUMBER) + 1;
-
-            setVideoNumber(randomVideo);
-            setUstidanKulish(true);
             setFoundWrong(true);
+            setUstidanKulish(true);
+            setVideoSourceURL(nextVideoURL);
 
-            handleFetchVideo();
-
-            setTimeout(() => {
-                setUstidanKulish(false);
-            }, 4000);
+            setNextVideoURL(null);
         }
     };
 
@@ -95,27 +86,36 @@ export const Quiz = () => {
         setHasSelectedOption(false);
     };
 
+    const handleVideoEnded = async () => {
+        setUstidanKulish(false);
+        const url = await fetchRandomVideo();
+        setNextVideoURL(url);
+    };
+
     useEffect(() => {
         const firstOptions = shuffle(questions[questionNumberIndex].options);
-        handleFetchVideo();
+        fetchRandomVideo();
         setShuffledOptions(firstOptions);
     }, []);
 
-    const handleFetchVideo = async () => {
+    const fetchRandomVideo = async () => {
         const baseURL = window.location.origin;
-
+        const randomVideo = Math.floor(Math.random() * VIDEO_NUMBER) + 1;
         try {
-            const res = await fetch(`${baseURL}/${videoNumber}.webm`, {
+            const res = await fetch(`${baseURL}/${randomVideo}.webm`, {
                 cache: "force-cache",
             });
-
-            const videoBlob = await res.blob();
-            const videoURL = URL.createObjectURL(videoBlob);
-            setVideoSourceURL(videoURL);
+            const blob = await res.blob();
+            return URL.createObjectURL(blob);
         } catch (err) {
             console.error("Video fetch failed:", err);
+            return null;
         }
     };
+
+    useEffect(() => {
+        fetchRandomVideo().then(setNextVideoURL);
+    }, []);
 
     // clean up function for url
     useEffect(() => {
@@ -124,7 +124,7 @@ export const Quiz = () => {
                 URL.revokeObjectURL(videoSourceURL);
             }
         };
-    }, [videoSourceURL]);
+    }, []);
 
     return (
         <>
@@ -140,16 +140,16 @@ export const Quiz = () => {
                     {ustidanKulish ? (
                         <div className="flex items-center justify-center pt-4 h-[16rem] w-full">
                             <video
+                                key={videoSourceURL}
                                 autoPlay
                                 muted
                                 className="h-full"
-                                onEnded={() => setUstidanKulish(false)}
+                                onEnded={handleVideoEnded}
                             >
                                 <source
                                     src={videoSourceURL}
                                     type="video/webm"
                                 />
-                                Your browser does not support the video tag.
                             </video>
                         </div>
                     ) : (

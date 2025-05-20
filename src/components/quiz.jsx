@@ -17,6 +17,7 @@ export const Quiz = () => {
     const [foundWrong, setFoundWrong] = useState(false);
     const [ustidanKulish, setUstidanKulish] = useState(false);
     const [videoNumber, setVideoNumber] = useState(1);
+    const [videoSourceURL, setVideoSourceURL] = useState(null);
 
     const navigate = useNavigate();
 
@@ -49,6 +50,7 @@ export const Quiz = () => {
         const value = e.currentTarget.dataset.option;
         setHasSelectedOption(true);
         setSelectedOption(value);
+
         if (value === correctAnswer) {
             for (let i = 0; i < 3; i++) {
                 fireConfetti();
@@ -56,9 +58,13 @@ export const Quiz = () => {
             setShowNextButton(true);
         } else {
             const randomVideo = Math.floor(Math.random() * VIDEO_NUMBER) + 1;
+
             setVideoNumber(randomVideo);
             setUstidanKulish(true);
             setFoundWrong(true);
+
+            handleFetchVideo();
+
             setTimeout(() => {
                 setUstidanKulish(false);
             }, 4000);
@@ -91,20 +97,48 @@ export const Quiz = () => {
 
     useEffect(() => {
         const firstOptions = shuffle(questions[questionNumberIndex].options);
+        handleFetchVideo();
         setShuffledOptions(firstOptions);
     }, []);
+
+    const handleFetchVideo = async () => {
+        const baseURL = window.location.origin;
+
+        try {
+            const res = await fetch(`${baseURL}/${videoNumber}.webm`, {
+                cache: "force-cache",
+            });
+
+            const videoBlob = await res.blob();
+            const videoURL = URL.createObjectURL(videoBlob);
+            setVideoSourceURL(videoURL);
+        } catch (err) {
+            console.error("Video fetch failed:", err);
+        }
+    };
+
+    // clean up function for url
+    useEffect(() => {
+        return () => {
+            if (videoSourceURL) {
+                URL.revokeObjectURL(videoSourceURL);
+            }
+        };
+    }, [videoSourceURL]);
 
     return (
         <>
             <section
-                className={`px-8 main_section_gradient overflow-y-auto ${
+                className={`px-8 main_section_gradient overflow-y-auto pb-8 ${
                     showNextButton ? "h-[90vh]" : "h-[100vh]"
                 }`}
             >
                 <Loadbar percentage={percentage} />
-                <div className="flex flex-col items-start rounded-lg mt-8 red_gradient h-[12rem] text-white px-4 overflow-y-auto relative">
+
+                {/* Question bar */}
+                <div className="flex flex-col items-start rounded-lg mt-8 red_gradient min-h-[12rem] pb-2 text-white px-4 overflow-y-auto relative">
                     {ustidanKulish ? (
-                        <div className="flex items-center justify-center h-full w-full">
+                        <div className="flex items-center justify-center pt-4 h-[16rem] w-full">
                             <video
                                 autoPlay
                                 muted
@@ -112,7 +146,7 @@ export const Quiz = () => {
                                 onEnded={() => setUstidanKulish(false)}
                             >
                                 <source
-                                    src={`/${videoNumber}.webm`}
+                                    src={videoSourceURL}
                                     type="video/webm"
                                 />
                                 Your browser does not support the video tag.
@@ -131,6 +165,7 @@ export const Quiz = () => {
                     )}
                 </div>
 
+                {/* Options */}
                 <div className="flex flex-col mt-4">
                     {shuffledOptions.map((option, indx) => (
                         <div
@@ -153,6 +188,8 @@ export const Quiz = () => {
                     ))}
                 </div>
             </section>
+
+            {/* Button for next */}
             {showNextButton && (
                 <div className="h-[10vh] flex items-center justify-center footer_bg pb-4">
                     <button

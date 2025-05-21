@@ -59,6 +59,11 @@ export const Quiz = () => {
             setVideoSourceURL(nextVideoURL);
 
             setNextVideoURL(null);
+            setTimeout(async () => {
+                setUstidanKulish(false);
+                const url = await fetchRandomVideo();
+                setNextVideoURL(url);
+            }, 1000);
         }
     };
 
@@ -101,6 +106,7 @@ export const Quiz = () => {
     const fetchRandomVideo = async () => {
         const baseURL = window.location.origin;
         const randomVideo = Math.floor(Math.random() * VIDEO_NUMBER) + 1;
+        console.log("i am fetching a video");
         try {
             const res = await fetch(`${baseURL}/${randomVideo}.webm`, {
                 cache: "force-cache",

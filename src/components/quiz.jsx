@@ -63,7 +63,7 @@ export const Quiz = () => {
                 setUstidanKulish(false);
                 const url = await fetchRandomVideo();
                 setNextVideoURL(url);
-            }, 1000);
+            }, 6000);
         }
     };
 

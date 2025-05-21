@@ -155,7 +155,7 @@ export const Quiz = () => {
                     ) : (
                         <>
                             <div className="mt-4 font-medium text-start w-full">
-                                Dasturlash.
+                                Matematika.
                             </div>
                             <div className="font-semibold text-2xl mt-8">
                                 {questions[questionNumberIndex].id}.{" "}

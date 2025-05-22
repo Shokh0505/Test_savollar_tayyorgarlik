@@ -220,15 +220,15 @@ export const questions = [
         "correctAnswer": "42 m"
       },
       {
-        "id": 21,
-        "question": "∫₁² 1/x² dx ni hisoblang",
+        "id": 22,
+        "question": "∫₁² 1/x dx ni hisoblang",
         "options": [
-          "1/2",
+          "ln 2",
           "1",
-          "1/3",
-          "3"
+          "2",
+          "ln 4"
         ],
-        "correctAnswer": "1/2"
+        "correctAnswer": "ln 2"
       },
       {
         "id": 22,

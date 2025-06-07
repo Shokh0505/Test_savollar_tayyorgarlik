@@ -1,12 +1,32 @@
-# React + Vite
+# Talabalar uchun
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Semester tugay deyapti. Imtihonlar kelyapti. _Bizda nima qilinadi universitetlarda_?
+Testlarni beriladi va **yodla** deyiladi. 1 - 2 kun ichida 100lab testlar yodlab chiqib kerak.
 
-Currently, two official plugins are available:
+Yodlashni ozgina **qiziqroq** qilsak yomonligi yo'q. Shu repodagi project yodlashni oson va
+qiziqarli qilishga yordam beradi.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+**Muhimi faqatgina React bilan ishlab chiqilgani uchun deploy qilish juda oson.**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Qaydlar
+
+_Live_ versiya quyidagi linkda
+
+```
+https://dasturlashatt.netlify.app/quiz
+```
+
+Giflarni bemolol almashtirsangin bo'ladi
+
+-   faqat quiz componentda global VIDEO_NUMBERni o'zgartish
+    va videoEnded da state o'zgartirishdan setTimeout orqali ma'lum vaqt oralig'ida handleVidoeEnded funksiyani o'zgartirish kerak.
+
+-   Yoki osoni giflarni webm ga o'zgartiring,
+    ularni public folderaga qo'shing, global variableni o'zgartiring, bo'ldi. Qancha turli xil
+    bo'lsa **reward variablity** oshadi va foydalnuvchini ushlab turishingiz oson bo'ladi.
+
+Talaba bop. Hech qanday serverga pul sarflamay netlify yoki vercelda free tier yetib ortadi.
+
+**Imtihondan charchamay o'tib oling!**

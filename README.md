@@ -28,5 +28,6 @@ Giflarni bemolol almashtirsangin bo'ladi
     bo'lsa **reward variablity** oshadi va foydalnuvchini ushlab turishingiz oson bo'ladi.
 
 Talaba bop. Hech qanday serverga pul sarflamay netlify yoki vercelda free tier yetib ortadi.
+data.js da json filedan quiz testlarni oladi. Shu formatda bering!
 
 #### Imtihondan charchamay o'tib oling!

@@ -29,4 +29,4 @@ Giflarni bemolol almashtirsangin bo'ladi
 
 Talaba bop. Hech qanday serverga pul sarflamay netlify yoki vercelda free tier yetib ortadi.
 
-**Imtihondan charchamay o'tib oling!**
+#### Imtihondan charchamay o'tib oling!
